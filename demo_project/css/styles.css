@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 2px solid #008080;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #008080;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #005f5f;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+main {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main h2, h1{
+  color: #008080;
+}
+main h1{
+ padding-top: 40px;
+}
+
+.hobby-section {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.hobby-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.hobby-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hobby-images img {
+  width: 150px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.img-tilt-1 {
+  transform: rotate(-5deg);
+}
+
+.img-tilt-2 {
+  transform: rotate(4deg);
+}
+
+.img-tilt-3 {
+  transform: rotate(-3deg);
+}
+
+.hobby-images-left {
+  order: -1;
+}
+
+.hobby-title {
+  text-align: center;
+  position: relative;
+  left: -20%;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  color: #008080;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  background: #008080;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#title {
+  color: #008080;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
