@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 10</title>
+
+    <script>
+      function addition() {
+        var x = +document.getElementById("num1").value;
+        var y = +document.getElementById("num2").value;
+        //fill in your code here to add the two numbers
+        var sum = x + y;
+        //then display them in the result field on the form using:
+        document.getElementById("result").value = sum;
+      }
+      function subtraction() {
+        //fill in your code here
+        var x = +document.getElementById("num1").value;
+        var y = +document.getElementById("num2").value;
+        var difference = x - y;
+        document.getElementById("result").value = difference;
+      }
+      function multiplication() {
+        var x = +document.getElementById("num1").value;
+        var y = +document.getElementById("num2").value;
+        var product = x * y;
+        document.getElementById("result").value = product;
+      }
+      function division() {
+        var x = +document.getElementById("num1").value;
+        var y = +document.getElementById("num2").value;
+
+        if (y === 0) {
+          alert("Cannot divide by zero");
+          document.getElementById("result").value = "Error";
+        } else {
+          var quotient = x / y;
+          document.getElementById("result").value = quotient;
+        }
+      }
+      function reset() {
+        document.getElementById("num1").value = "";
+        document.getElementById("num2").value = "";
+        document.getElementById("result").value = "0";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Calculator Using Forms &amp; JavaScript</h1>
+    </header>
+
+    <form>
+      Number 1:<input type="number" id="num1"><br>
+      Number 2:<input type="number" id="num2"><br>
+      Result: <input type="text" id="result" value="0" readonly><br>
+    </form>
+
+    <!-- create 5 <buttons> here -->
+    <button type="button" onclick="addition()">Add</button>
+    <button type="button" onclick="subtraction()">Subtract</button>
+    <button type="button" onclick="multiplication()">Multiply</button>
+    <button type="button" onclick="division()">Divide</button>
+    <button type="reset" onclick="reset()">Reset</button>
+  </body>
+</html>

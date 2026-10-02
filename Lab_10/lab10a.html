@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 10A - Form Controls</title>
+</head>
+<body>
+    <h1>Form Elements Practice</h1>
+    <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+
+        <!-- a. Textbox -->
+        <label for="user">Username:</label>
+        <input type="text" name="user" id="user" maxlength="30"><br><br>
+
+        <!-- b. Radio buttons -->
+        <p>Favorite Month:</p>
+        <input type="radio" name="month" value="January"> January<br>
+        <input type="radio" name="month" value="February"> February<br>
+        <input type="radio" name="month" value="March"> March<br>
+
+        <!-- c. Select List -->
+        <p>Favorite Social Networking Site:</p>
+        <select name="social">
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+        </select><br><br>
+
+        <!-- d. Fieldset -->
+        <fieldset>
+            <legend>Shipping Address</legend>
+            <label for="addr1">Address Line 1:</label>
+            <input type="text" name="addr1" id="addr1"><br>
+
+            <label for="addr2">Address Line 2:</label>
+            <input type="text" name="addr2" id="addr2"><br>
+
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city"><br>
+
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state"><br>
+
+            <label for="zip">ZIP:</label>
+            <input type="text" name="zip" id="zip"><br>
+        </fieldset><br>
+
+        <!-- e. Image button -->
+        <input type="image" src="signup.png" alt="Sign Up" width="300" height="90"><br><br>
+
+        <!-- f. Hidden input -->
+        <input type="hidden" name="userid" value="12345">
+
+        <!-- g. Password box -->
+        <label for="pword">Password:</label>
+        <input type="password" name="pword" id="pword"><br><br>
+
+    </form>
+</body>
+</html>
